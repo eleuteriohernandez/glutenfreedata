@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Eleuterio Hernandez Data Portfolio</title>
     <!-- Add your CSS styles or link to an external stylesheet here -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <style>
+    <style>
         body {
             text-align: center;
+            margin: 0; /* Elimina el margen predeterminado del body */
+            padding: 0; /* Elimina el relleno predeterminado del body */
+            height: 100vh; /* Establece la altura del body al 100% de la ventana */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section#about {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        section#about h1 img {
+            max-width: 150px; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            margin-bottom: 10px; /* Espaciado entre la imagen y el párrafo */
         }
 
         footer {
@@ -34,6 +55,7 @@
     </style>
 </head>
 <body>
+<body>
 
     <!-- Navigation Bar -->
         <header>
@@ -49,17 +71,11 @@
 
     <!-- About Section -->
     <section id="about">
-        <h1>Your Name</h1>
-        <p>Welcome to my portfolio! I am a passionate [your profession] based in [your location].</p>
+        <h1><img src="Screenshot_1.png"></h1>
+        <p>"En el análisis de datos, clave como un programador celiaco es ser: la importancia de las etiquetas con cuidado revisar, para sorpresas desagradables evitar."</p>
         <!-- Add more details about yourself here -->
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <p>Explora algunos de mis proyectos destacados.</p>
-        <!-- Add more projects as needed -->
-    </section>
 
     <!-- Add your footer here -->    
     <footer>
