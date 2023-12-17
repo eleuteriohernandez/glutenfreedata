@@ -84,3 +84,27 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Social Icons Section Styles */
+#social {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#social h2 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
