@@ -1,4 +1,4 @@
-/* style.css para toda la web */
+/* styles.css para toda la web */
 
 :root {
     --blue: #007bff;
@@ -100,4 +100,30 @@ body {
 
 .social-icons a:hover {
     color: var(--primary);
+}
+/* Media Query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .project {
+        border-radius: 0; /* Bordes cuadrados en pantallas pequeñas */
+    }
+
+    .project img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+#social {
+    /* ... (resto de los estilos) ... */
+}
+
+/* Media Query para ajustes adicionales en pantallas más pequeñas o según necesidades */
+@media only screen and (max-width: 768px) {
+    .project h3 {
+        font-size: 1.2em;
+    }
+
+    .project p {
+        font-size: 0.9em;
+    }
 }
