@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Acerca de Mí</title>
-    <!-- Agrega tus estilos CSS o enlaza a una hoja de estilo externa aquí -->
+    <title>Your Name - Portfolio</title>
+    <!-- Add your CSS styles or link to an external stylesheet here -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <style>
+        body {
+            text-align: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa; /* Color de fondo del pie de página */
+            padding: 10px; /* Espaciado interno del pie de página */
+            text-align: center;
+        }
+
+        .secondary-navbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .secondary-navbar a {
+            margin: 0 10px; /* Espaciado entre los iconos */
+        }
+    </style>
 </head>
 <body>
 
@@ -28,34 +53,40 @@
         <p>Hola, soy Eleuterio Hernández León :wave:,</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-        <h3>Programming Skills</h3>
-        <ul>
-            <li>
-                Python
-                <progress value="90" max="100"></progress>
-            </li>
-            <li>
-                SQL
-                <progress value="80" max="100"></progress>
-            </li>
-            <li>
-                Excel
-                <progress value="100" max="100"></progress>
-            </li>
-        </ul>
-
-        <h3>Other Skills</h3>
-        <ul>
-            <li>
-                Digital Marketing Cloud
-                <progress value="80" max="100"></progress>
-            </li>
-            <li>
-                Cooking
-                <progress value="95" max="100"></progress>
-            </li>
-        </ul>
-
+             <table>
+            <tr>
+                <th class="programming-skills">Programming Skills</th>
+                <th class="other-skills">Other Skills</th>
+            </tr>
+            <tr>
+                <td>
+                    HTML5/CSS3
+                    <progress value="90" max="100"></progress>
+                </td>
+                <td>
+                    Adobe Photoshop
+                    <progress value="95" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SQL
+                    <progress value="80" max="100"></progress>
+                </td>
+                <td>
+                    Cooking
+                    <progress value="90" max="100"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Python
+                    <progress value="70" max="100"></progress>
+                </td>
+                <td></td> <!-- Celda vacía para mantener la estructura de la tabla -->
+            </tr>
+        </table>
+        
         <h3>Education</h3>
         <p>
             <strong>Student CS</strong><br>
