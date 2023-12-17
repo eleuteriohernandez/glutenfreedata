@@ -1,12 +1,10 @@
 // load-navbar.js
 
 document.addEventListener('DOMContentLoaded', function () {
-    const navbarContainer = document.getElementById('navbar-container');
-
-    // Cargar el contenido de navbar.html en el contenedor
+    // Cargar el contenido de navbar.html en el cuerpo del documento
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => {
-            navbarContainer.innerHTML = data;
+            document.body.insertAdjacentHTML('afterbegin', data);
         });
 });
