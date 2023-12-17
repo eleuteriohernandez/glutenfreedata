@@ -43,20 +43,21 @@ body {
 
 /* Barra de Navegación */
 header {
-    background-color: var(--white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #007bff, #6610f2); /* Fondo degradado */
+    color: var(--white); /* Texto en color blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 1rem; /* Mayor espacio alrededor de los elementos */
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    color: var(--blue);
+    font-size: 1.8rem; /* Texto más grande para la marca */
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -68,18 +69,19 @@ header {
 }
 
 .nav-item {
-    margin-right: 1rem;
+    margin-right: 1.5rem; /* Mayor espacio entre elementos de navegación */
 }
 
 .nav-link {
     text-decoration: none;
-    color: var(--gray-dark);
+    color: var(--light); /* Texto más claro */
     transition: color 0.3s;
 }
 
 .nav-link:hover {
-    color: var(--blue);
+    color: var(--yellow); /* Cambio de color al pasar el mouse */
 }
+
 
 /* Media Query para diseño responsivo */
 @media (max-width: var(--breakpoint-md)) {
@@ -103,4 +105,3 @@ header {
     }
 }
 
-/* ... (resto de los estilos) ... */
