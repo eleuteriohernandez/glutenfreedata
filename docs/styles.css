@@ -83,6 +83,7 @@ header {
 }
 
 
+
 /* Media Query para diseño responsivo */
 @media (max-width: var(--breakpoint-md)) {
     .navbar {
@@ -103,5 +104,9 @@ header {
         margin-right: 0;
         margin-bottom: 0.5rem;
     }
-}
 
+    #about-me {
+        max-width: 90%; /* Ajuste para pantallas pequeñas */
+        margin: 0 auto; /* Centrar el contenido */
+    }
+}
