@@ -35,9 +35,9 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    text-align: left;
+    text-align: center;
     box-sizing: border-box;
-    margin: 0;
+    margin: 150px;
     padding: 0;
 }
 
@@ -46,8 +46,21 @@ header {
     background: linear-gradient(to right, #007bff, #6610f2); /* Fondo degradado */
     color: var(--white); /* Texto en color blanco */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ajusta el índice z para que la barra de navegación esté por encima de otras capas */
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Color de fondo del pie de página */
+    padding: 10px; /* Espaciado interno del pie de página */
+    text-align: center;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -82,6 +95,17 @@ header {
     color: var(--yellow); /* Cambio de color al pasar el mouse */
 }
 
+.secondary-navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.secondary-navbar a {
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+.custom-logo {
+        font-size: 1.4em; /* Ajusta el tamaño del texto según sea necesario */
+}
 /* Ejemplo de animación CSS */
 @keyframes fadeIn {
     from {
@@ -99,29 +123,20 @@ header {
     animation: fadeIn 1s ease-out;
 }
 
+:root {
+    --breakpoint-md: 600px;
+}
+
 /* Media Query para diseño responsivo */
 @media (max-width: var(--breakpoint-md)) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .navbar-brand {
-        margin-bottom: 1rem;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-item {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-    }
-
-    #about-me {
-        max-width: 90%; /* Ajuste para pantallas pequeñas */
-        margin: 0 auto; /* Centrar el contenido */
+    /* Ajusta cualquier otro estilo necesario para dispositivos más pequeños */
+    body {
+        font-size: 14px;
     }
 }
+
+
