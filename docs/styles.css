@@ -27,6 +27,7 @@
     --font-family-sans-serif: 'Poppins', sans-serif;
     --font-family-monospace: 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
     --breakpoint-md: 768px;
+    --breakpoint-md2: 400px;
 }
 
 body {
@@ -123,10 +124,6 @@ footer {
     animation: fadeIn 1s ease-out;
 }
 
-:root {
-    --breakpoint-md: 600px;
-}
-
 /* Media Query para diseño responsivo */
 @media (max-width: var(--breakpoint-md)) {
     .navbar {
@@ -138,5 +135,10 @@ footer {
         font-size: 14px;
     }
 }
-
+/* Nueva Media Query con la nueva variable */
+@media (max-width: var(--breakpoint-md2)) {
+    body {
+        font-size: 12px; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+    }
+}
 
