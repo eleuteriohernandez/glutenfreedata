@@ -130,11 +130,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
     /* Ajusta cualquier otro estilo necesario para dispositivos más pequeños */
     body {
         font-size: 14px;
     }
 }
+
 /* Nueva Media Query con la nueva variable */
 @media (max-width: var(--breakpoint-md2)) {
     body {
