@@ -82,6 +82,12 @@ header {
     color: var(--yellow); /* Cambio de color al pasar el mouse */
 }
 
+/* Margenes de la web */
+#contenido-principal {
+    margin-top: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
 /* Ejemplo de animación CSS */
 @keyframes fadeIn {
     from {
